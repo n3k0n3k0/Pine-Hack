@@ -1,0 +1,16 @@
+[
+{
+  "modid": "pinehack",
+  "name": "PineHack",
+  "description": "Minecraft 1.12.2 hacked client developed by Pineman",
+  "version": "0.0.1",
+  "mcversion": "${1.12.2}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Pineman"],
+  "credits": "my shitty computer is what made all this happen",
+  "logoFile": "pinehack.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
