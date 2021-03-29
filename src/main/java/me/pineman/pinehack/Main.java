@@ -34,7 +34,8 @@ public class Main {
 
     @EventHandler
     public void PreInt (FMLPreInitializationEvent event) {
-        LOGGER.info("PINEHACK ON TOP");
+        LOGGER.info("pinehack fucked your mom -Pineman");
+        LOGGER.info("cat cat small cat");
     }
 
     @EventHandler
