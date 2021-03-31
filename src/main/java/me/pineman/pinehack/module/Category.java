@@ -3,7 +3,7 @@ package me.pineman.pinehack.module;
 import me.pineman.pinehack.Main;
 
 public enum Category {
-    COMBAT("Combat"), EXPLOITS("Exploits"), RENDER("Render"), MOVEMENT("Movment"), CLIENT("Client");
+    COMBAT("Combat"), RENDER("Render"), MOVEMENT("Movement"), CLIENT("Client");
 
     public String name;
     public int moduleIndex;
@@ -50,23 +50,6 @@ public enum Category {
             }
 
             if(mod.getCategory().equals(COMBAT) && mod.equals(m)) {
-                return i;
-            }
-        }
-
-        return 0;
-    }
-
-    public static int placeInListExploits(Module m) {
-        int i = 1;
-
-        for(Module mod : Main.moduleManager.getModuleList()) {
-            if(mod.getCategory().equals(EXPLOITS) && !mod.equals(m)) {
-                i++;
-                continue;
-            }
-
-            if(mod.getCategory().equals(EXPLOITS) && mod.equals(m)) {
                 return i;
             }
         }

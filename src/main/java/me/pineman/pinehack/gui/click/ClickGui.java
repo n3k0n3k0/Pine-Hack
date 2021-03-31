@@ -18,11 +18,9 @@ public class ClickGui extends GuiScreen {
         drawRect(250, 2, 322, 14, 0x80000000);
         mc.fontRenderer.drawString("Combat", 252, 4, 0xffffffff);
         drawRect(350, 2, 432, 14, 0x80000000);
-        mc.fontRenderer.drawString("Exploits", 352, 4, 0xffffffff);
+        mc.fontRenderer.drawString("Movement", 352, 4, 0xffffffff);
         drawRect(450, 2, 506, 14, 0x80000000);
-        mc.fontRenderer.drawString("Movement", 452, 4, 0xffffffff);
-        drawRect(550, 2, 612, 14, 0x80000000);
-        mc.fontRenderer.drawString("Render", 552, 4, 0xffffffff);
+        mc.fontRenderer.drawString("Render", 452, 4, 0xffffffff);
         super.drawScreen(mouseX, mouseY, partialTicks);
     }
 
@@ -35,7 +33,6 @@ public class ClickGui extends GuiScreen {
 
         if(m.getCategory().equals(Category.COMBAT)) return Category.placeInListCombat(m) * 14;
         if(m.getCategory().equals(Category.CLIENT)) return Category.placeInListClient(m) * 14;
-        if(m.getCategory().equals(Category.EXPLOITS)) return Category.placeInListExploits(m) * 14;
         if(m.getCategory().equals(Category.MOVEMENT)) return Category.placeInListMovement(m) * 14;
         if(m.getCategory().equals(Category.RENDER)) return Category.placeInListRender(m) * 14;
 
@@ -46,9 +43,8 @@ public class ClickGui extends GuiScreen {
 
         if(m.getCategory().equals(Category.COMBAT)) return 150;
         if(m.getCategory().equals(Category.CLIENT)) return 250;
-        if(m.getCategory().equals(Category.EXPLOITS)) return 350;
-        if(m.getCategory().equals(Category.MOVEMENT)) return 450;
-        if(m.getCategory().equals(Category.RENDER)) return 550;
+        if(m.getCategory().equals(Category.MOVEMENT)) return 350;
+        if(m.getCategory().equals(Category.RENDER)) return 450;
 
         return 0;
     }

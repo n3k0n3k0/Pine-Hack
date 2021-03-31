@@ -75,6 +75,8 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
     compile('com.lukflug:panelstudio:0.1.8')
+    compile('com.lukflug:panelstudio-mc12:0.1.8')
+    compile('com.lukflug:panelstudio-mc8-forge:0.1.10')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

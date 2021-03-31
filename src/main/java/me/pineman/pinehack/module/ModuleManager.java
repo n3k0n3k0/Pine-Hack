@@ -6,6 +6,7 @@ import me.pineman.pinehack.module.modules.combat.AutoArmor;
 import me.pineman.pinehack.module.modules.movement.AntiLevitate;
 import me.pineman.pinehack.module.modules.movement.AutoWalk;
 import me.pineman.pinehack.module.modules.movement.Sprint;
+import me.pineman.pinehack.module.modules.render.NoRender;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +25,7 @@ public class ModuleManager {
         this.modules.add(new AutoArmor());
         //render
         this.modules.add(new Gui());
+        this.modules.add(new NoRender());
     }
 
     public Module getModule (String name) {
