@@ -2,6 +2,7 @@ package me.pineman.pinehack.module;
 
 import me.pineman.pinehack.Main;
 import me.pineman.pinehack.gui.click.Gui;
+import me.pineman.pinehack.module.modules.client.RPC;
 import me.pineman.pinehack.module.modules.combat.AutoArmor;
 import me.pineman.pinehack.module.modules.movement.AntiLevitate;
 import me.pineman.pinehack.module.modules.movement.AutoWalk;
@@ -26,6 +27,8 @@ public class ModuleManager {
         //render
         this.modules.add(new Gui());
         this.modules.add(new NoRender());
+        //client
+        this.modules.add(new RPC());
     }
 
     public Module getModule (String name) {

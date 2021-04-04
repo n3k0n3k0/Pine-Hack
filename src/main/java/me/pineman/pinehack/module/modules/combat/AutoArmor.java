@@ -17,7 +17,6 @@ public class AutoArmor extends Module {
 
     public AutoArmor() {
         super("autoArmor", "automatically applies the best armor.", Category.COMBAT);
-        this.setKey(Keyboard.KEY_B);
     }
     private Minecraft mc = Minecraft.getMinecraft();
 

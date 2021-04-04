@@ -1,6 +1,8 @@
 Args: "--in-jar", "/Users/mimmo/Minecraft_Mods/Pine Hack/build/libs/modid-1.0.jar", "--out-jar", "/Users/mimmo/Minecraft_Mods/Pine Hack/build/reobfJar/output.jar", "--srg-in", "/Users/mimmo/Minecraft_Mods/Pine Hack/build/createMcpToSrg/output.tsrg", "--live"
 Classpath: /Users/mimmo/.gradle/caches/forge_gradle/maven_downloader/net/md-5/SpecialSource/1.8.3/SpecialSource-1.8.3-shaded.jar
 Classpath: /Users/mimmo/.gradle/caches/modules-2/files-2.1/com.lukflug/panelstudio/0.1.8/b5ba0dfcb4199c80aa7011be3c840d5cf940e1be/panelstudio-0.1.8.jar
+Classpath: /Users/mimmo/.gradle/caches/modules-2/files-2.1/com.lukflug/panelstudio-mc12/0.1.8/885c76b26e7b2d320a895978da957fb5de1517d9/panelstudio-mc12-0.1.8.jar
+Classpath: /Users/mimmo/.gradle/caches/modules-2/files-2.1/com.lukflug/panelstudio-mc8-forge/0.1.10/812978fa69da0fe413b2eb8f93cc71a50f879e8d/panelstudio-mc8-forge-0.1.10.jar
 Classpath: /Users/mimmo/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12/forge-1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12-recomp.jar
 Classpath: /Users/mimmo/.gradle/caches/forge_gradle/minecraft_repo/versions/1.12.2/client-extra.jar
 Classpath: /Users/mimmo/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar

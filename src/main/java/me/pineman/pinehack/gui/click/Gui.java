@@ -14,5 +14,6 @@ public class Gui extends Module {
 
     public void onEnable() {
         mc.displayGuiScreen(new ClickGui());
+        toggle();
     }
 }

@@ -24,7 +24,7 @@ public enum Category {
     }
 
     public static int placeInListRender(Module m) {
-        int i = 0;
+        int i = 1;
 
         for(Module mod : Main.moduleManager.getModuleList()) {
             if(mod.getCategory().equals(RENDER) && !mod.equals(m)) {

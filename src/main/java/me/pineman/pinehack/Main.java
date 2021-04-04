@@ -3,6 +3,7 @@ package me.pineman.pinehack;
 import me.pineman.pinehack.module.Module;
 import me.pineman.pinehack.module.ModuleManager;
 import me.pineman.pinehack.proxy.CommonProxy;
+import me.pineman.pinehack.rpc.Discord;
 import me.pineman.pinehack.ui.Hud;
 import me.pineman.pinehack.util.Reference;
 import net.minecraft.client.Minecraft;

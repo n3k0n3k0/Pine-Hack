@@ -31,8 +31,8 @@ public class ClickGui extends GuiScreen {
 
     public int placeForHackY(Module m) {
 
-        if(m.getCategory().equals(Category.COMBAT)) return Category.placeInListCombat(m) * 14;
         if(m.getCategory().equals(Category.CLIENT)) return Category.placeInListClient(m) * 14;
+        if(m.getCategory().equals(Category.COMBAT)) return Category.placeInListCombat(m) * 14;
         if(m.getCategory().equals(Category.MOVEMENT)) return Category.placeInListMovement(m) * 14;
         if(m.getCategory().equals(Category.RENDER)) return Category.placeInListRender(m) * 14;
 
@@ -41,8 +41,8 @@ public class ClickGui extends GuiScreen {
 
     public int placeForHackX(Module m) {
 
-        if(m.getCategory().equals(Category.COMBAT)) return 150;
-        if(m.getCategory().equals(Category.CLIENT)) return 250;
+        if(m.getCategory().equals(Category.CLIENT)) return 150;
+        if(m.getCategory().equals(Category.COMBAT)) return 250;
         if(m.getCategory().equals(Category.MOVEMENT)) return 350;
         if(m.getCategory().equals(Category.RENDER)) return 450;
 
@@ -51,7 +51,7 @@ public class ClickGui extends GuiScreen {
 
     @Override
     public void initGui() {
-        for(int i = 1; i < Main.moduleManager.getModules(); i++) {
+        for(int i = 0; i < Main.moduleManager.getModules(); i++) {
             Module m = Main.moduleManager.getModuleList().get(i);
             buttonList.add(new GuiButton(i, placeForHackX(m), placeForHackY(m), 25 + (m.getName().length() * 3) + m.getName().length(), 14, m.getName()));
         }
@@ -59,10 +59,15 @@ public class ClickGui extends GuiScreen {
 
     @Override
     protected void actionPerformed(GuiButton button) throws IOException {
-        for(int i = 1; i < Main.moduleManager.getModules(); i++) {
+        for(int i = 0; i < Main.moduleManager.getModules(); i++) {
             if(button.id == i) {
                 Main.moduleManager.getModuleList().get(i).toggle();
             }
         }
+    }
+
+    @Override
+    public void onGuiClosed() {
+
     }
 }

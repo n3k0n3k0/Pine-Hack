@@ -8,6 +8,5 @@ public class Sprint extends Module {
 
     public Sprint() {
         super("Sprint", "auto runs when you hold w", Category.MOVEMENT);
-        this.setKey(Keyboard.KEY_M);
     }
 }

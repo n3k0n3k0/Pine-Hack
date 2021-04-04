@@ -14,6 +14,7 @@ repositories {
         name = 'lukflug'
         url = 'https://lukflug.github.io/maven'
     }
+    jcenter()
 }
 
 configurations.all {
@@ -77,6 +78,7 @@ dependencies {
     compile('com.lukflug:panelstudio:0.1.8')
     compile('com.lukflug:panelstudio-mc12:0.1.8')
     compile('com.lukflug:panelstudio-mc8-forge:0.1.10')
+    compile('club.minnced:java-discord-rpc:2.0.1')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
